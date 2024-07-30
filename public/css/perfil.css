@@ -1,0 +1,157 @@
+/* styles.css */
+
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    color: #580404!important;
+    font-family: monospace!important;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    width: 80%!important;
+    background-color: #ffffff;
+
+    margin: 20px;
+}
+.seccion-perfil
+{
+    background-color: #fff9ef;
+    border: 1px solid #ddd;
+    margin: 1em 1em 1em 1em;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    h2 
+    {
+        text-align: center;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #ddd;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+.header-profile {
+    background: url('https://i.pinimg.com/564x/c9/ef/e1/c9efe143995d84c23ca4defe70140d22.jpg');
+    background-image: url('https://i.pinimg.com/564x/56/13/c1/5613c131ea86489e392316e6e10e062d.jpg');
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100%;
+    height: 10em; /* Ajusta la altura del header según tus necesidades */
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+
+.profile-picture img{
+    width: 8em;
+    height: 8em!important;
+    background-color: #cccccc;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 4px solid white;
+}
+
+.header-info h1 {
+    margin: 0;
+}
+
+.header-info p {
+    margin: 5px 0;
+}
+
+#btn-datos-personales {
+    padding: 10px 15px;
+    background-color: #e2b884;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.personal-info h2, .citas h2, .puntuaciones h2, .tutor h2, .profesionales h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.citas ul, .puntuaciones ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.citas li, .puntuaciones li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.puntuaciones li p {
+    margin: 5px 0;
+}
+
+.tutor-info, .profesionales-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+.tutor-info-section, .profesionales-info-section{
+    width: auto;
+    padding: 1em;
+    border: 1px solid #580404!important;
+    background-color: #ffffff!important;
+    margin-bottom: 1em;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+.tutor, .profesionales {
+    padding: 1em;
+}
+.tutor p, .profesionales p{
+    text-align: center;
+}
+
+.tutor-info div, .profesionales-info div {
+    width: 48%;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .profile-picture {
+        margin: 0 0 20px 0;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+    
+    .tutor-info div, .profesionales-info div {
+        width: 100%;
+    }
+}

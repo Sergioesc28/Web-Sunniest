@@ -1,0 +1,50 @@
+@import url(./bt.css);
+@import url(./forms.css);
+@import url(./raiz.css);
+@import url(./tablas.css);
+
+
+/* Seccion de botones del crud ------------------------------------------------------------------------------------------------------------------------ */
+    /* Contenedor de los botones */
+    .btn-crud {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente los elementos */
+        align-items: center; /* Centra verticalmente los elementos */
+        margin-top: 1em;
+    }
+    @media (max-width: 576px)
+    {
+        .btn-crud 
+        {
+            flex-direction: column; /* Cambia a dirección de columna en pantallas pequeñas */
+            text-align: center; /* Centra el texto del botón en pantallas pequeñas */
+        }
+    }
+    /* Estilo de los botones */
+    .btn-crud button
+    {
+        margin-left: 1em;
+    }
+/* Seccion de botones del crud ------------------------------------------------------------------------------------------------------------------------ */
+/* Secciones de la tabla */
+.tablas
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-top: 1em;
+}
+.cartas
+{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-top: 1em;
+}
+
+/* Ocultar la tabla de datos */
+.hide {
+    display: none;
+    opacity: 0%;
+}

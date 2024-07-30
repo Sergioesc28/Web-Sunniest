@@ -1,0 +1,76 @@
+@import url(./raiz.css);
+/* Estilos base para la tabla */
+.tablaDatos 
+{
+    width: auto;
+    border-collapse: collapse;
+    border: 1px solid var(--border-color);
+    margin-bottom: 2em;
+}
+
+/* Estilos para el encabezado de la tabla */
+.tablaEncabezado 
+{
+    background-color: #f2f2f2;
+}
+
+/* Estilos para las filas de encabezado */
+.tablaEncabezado .tablaColumna 
+{
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+}
+
+/* Estilos para las filas de datos */
+.tablaLista .tablaFila 
+{
+    text-align: center;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+}
+
+/* Estilos alternos para las filas */
+.tablaLista .tablaFila:nth-child(even) 
+{
+    background-color: #f2f2f2;
+}
+
+/* Media query para hacer la tabla responsiva */
+@media (max-width: 768px) 
+{
+    .tablaDatos 
+    {
+        border: 0;
+    }
+    .tablaDatos thead 
+    {
+        display: none;
+    }
+    .tablaDatos tbody, .tablaDatos tr, .tablaDatos td 
+    {
+        display: block;
+        width: 100%;
+    }
+    .tablaDatos td 
+    {
+        text-align: right;
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+    .tablaDatos td:before 
+    {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+}
+
+.tituloTabla
+{
+    color: var(--btn-primary-hover-bg);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+}

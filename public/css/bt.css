@@ -1,0 +1,282 @@
+@import url(./raiz.css);
+:root
+{
+    --bg-navbar: #ad8f8f;
+    /* Colores generales */
+    --color-primary: #007bff; /* Color primario */
+    --color-secondary: #6c757d; /* Color secundario */
+    --color-success: #28a745; /* Color de éxito */
+    --color-danger: #dc3545; /* Color de peligro */
+    --color-warning: #ffc107; /* Color de advertencia */
+    --color-info: #17a2b8; /* Color de información */
+    --color-light: #f8f9fa; /* Color claro */
+    --color-dark: #343a40; /* Color oscuro */
+    
+    /* Colores de fondo */
+    --bg-body: #ffffff; /* Fondo del cuerpo */
+    --bg-navbar: #ad8f8f; /* Fondo del navbar */
+    --bg-dropdown: #f8f9fa; /* Fondo del menú desplegable */
+    --bg-modal: #ffffff; /* Fondo del modal */
+    --bg-modal-header: #007bff; /* Fondo del encabezado del modal */
+    --bg-modal-header-delete: #ff0000; /* Fondo del encabezado del modal de eliminación */
+    --bg-modal-header-insert: #007bff; /* Fondo del encabezado del modal de inserción */
+    --bg-modal-header-update: #00ff5e; /* Fondo del encabezado del modal de actualización */
+    --bg-modal-footer: #f8f9fa; /* Fondo del footer del modal */
+    
+    /* Colores de texto */
+    --text-color: #400101; /* Color de texto general */
+    --text-color-light: #ffffff; /* Color de texto claro */
+    --text-color-navbar: #400101; /* Color de texto del navbar */
+    --text-color-dropdown: #400101; /* Color de texto del menú desplegable */
+    --text-color-modal-header: #ffffff; /* Color de texto del encabezado del modal */
+    --text-color-modal-body: #400101; /* Color de texto del cuerpo del modal */
+    --text-color-modal-footer: #400101; /* Color de texto del footer del modal */
+    
+    /* Colores de borde */
+    --border-color: #ced4da; /* Color de borde general */
+    --border-color-primary: #007bff; /* Color de borde primario */
+    --border-color-secondary: #6c757d; /* Color de borde secundario */
+    
+    /* Colores de botón */
+    --btn-primary-bg: #007bff; /* Fondo del botón primario */
+    --btn-primary-text: #ffffff; /* Color de texto del botón primario */
+    --btn-primary-border: #007bff; /* Borde del botón primario */
+    --btn-primary-hover-bg: #0056b3; /* Fondo del botón primario al pasar el ratón */
+    --btn-secondary-bg: #6c757d; /* Fondo del botón secundario */
+    --btn-secondary-text: #ffffff; /* Color de texto del botón secundario */
+    --btn-secondary-border: #6c757d; /* Borde del botón secundario */
+    --btn-secondary-hover-bg: #5a6268; /* Fondo del botón secundario al pasar el ratón */
+    
+    /* Otros */
+    --modal-content-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra para el contenido del modal */
+}
+/* Inicia -  Opciones del NavBar -------------------------------------------- */
+/* Define el contenedor del navbar y establece el color de fondo, el relleno interno y una sombra ligera para darle profundidad. */
+.navbar {
+    background-color: #eed6c4!important; /* Color de fondo del navbar */
+    padding: 0.5rem 1rem; /* Espaciado interno del navbar */
+    box-shadow: 0 2px 4px rgba(247, 219, 219, 0.1); /* Sombra ligera */
+}
+.bg-light
+{
+    background-color: #f8ebc2!important; /* Color de fondo del navbar */
+}
+/* Estiliza el texto del enlace de la marca (Navbar). Aquí se define el tamaño de la fuente, el peso de la fuente y el color del texto. */
+.navbar-brand {
+    font-size: 1.5rem; /* Tamaño de fuente del texto del navbar-brand */
+    font-weight: bold; /* Negrita */
+    color: var(--text-color-navbar); /* Color del texto */
+}
+/* Personaliza el estilo del icono del botón de hamburguesa. Aquí se puede ajustar el color del borde del icono. */
+.navbar-toggler-icon {
+    border-color: var(--text-color-navbar); /* Color del icono del botón de hamburguesa */
+    background-image: url('https://i.pinimg.com/474x/82/5b/2f/825b2fd5697c53d972ce604afaca5fa5.jpg');
+}
+/* Establece el estilo de los enlaces en el navbar. Define el color del texto normal. */
+.navbar-nav .nav-link {
+    color: var(--text-color-navbar)!important; /* Color de los enlaces del navbar */
+}
+/* Define el estilo de los enlaces cuando se pasa el ratón por encima. Aquí se puede ajustar el color del texto al pasar el ratón. */
+.navbar-nav .nav-link:hover {
+    color: var(--text-color-navbar)!important; /* Color del enlace al pasar el ratón */
+}
+/* Define el estilo del menú desplegable. Establece el color de fondo del menú desplegable. */
+.dropdown-menu {
+    background-color: #f8ebc2!important; /* Color de fondo del menú desplegable */
+}
+/* Define el estilo de los ítems dentro del menú desplegable. Aquí se establece el color del texto de los ítems. */
+.dropdown-item {
+    color: var(--text-color-dropdown)!important; /* Color de los ítems del menú desplegable */
+}
+/* Define el estilo de los ítems del menú desplegable cuando se pasa el ratón por encima. Se puede ajustar el color de fondo y el color del texto al pasar el ratón. */
+.dropdown-item:hover {
+    background-color: #eca685!important; /* Color de fondo al pasar el ratón por encima de un ítem */
+    color: var(--text-color-dropdown)!important; /* Color del ítem al pasar el ratón */
+}
+/* Estiliza los inputs dentro del formulario de búsqueda. Define el color del borde del input. */
+.form-control {
+    background-color: #fff5e9!important;
+    border-color: var(--text-color-navbar)!important; /* Color del borde del input */
+}
+.btn-search {
+    color: #400101!important; /* Color del texto del botón */
+    font-weight: bold!important;
+    border-color: #400101!important; /* Color del borde del botón */
+    background-color: #e4b889!important;
+    transition: all 0.3s ease; /* Transición para todas las propiedades con duración de 0.3 segundos */
+}
+
+.btn-search:hover {
+    color: #f8ebc2!important; /* Color del texto del botón al pasar el ratón */
+    font-weight: bold!important;
+    border-color: #400101!important; /* Color del borde del botón al pasar el ratón */
+    background-color: #400101!important;
+}
+/* Estiliza el botón de búsqueda. Define el color del texto y el color del borde del botón. */
+.btn-outline-success {
+    color: var(--color-success); /* Color del texto del botón */
+    border-color: var(--color-success); /* Color del borde del botón */
+}
+/* Define el estilo del botón de búsqueda al pasar el ratón por encima. Aquí se puede ajustar el color de fondo y el color del texto al pasar el ratón. */
+.btn-outline-success:hover {
+    background-color: var(--color-success); /* Color de fondo al pasar el ratón */
+    color: var(--text-color-light); /* Color del texto al pasar el ratón */
+    border-color: var(--color-success); /* Color del borde al pasar el ratón */
+}
+/* Termina - opciones de estilo del  NavBar --------------------------------------------------------------------------------------- */
+
+/* Opciones para dar estilo a los modales ----------------------------------------------------------------------------------------- */
+/* Define el ancho máximo del modal. En este caso, se establece en un 90% del tamaño disponible. */
+.modal-dialog {
+    max-width: 90%; /* Ancho máximo del modal */
+}
+/* para hacer que el modal sea scrollable verticalmente si el contenido es largo. Se establece una altura máxima usando  */
+.modal-dialog-scrollable {
+    max-height: calc(100vh - 100px); /* Altura máxima del modal con scroll */
+}
+/* Establece estilos para el contenido del modal. Se elimina el borde */
+.modal-content {
+    border: none; /* Elimina el borde del contenido del modal */
+    border-radius: 10px; /* Borde redondeado para el contenido del modal */
+    box-shadow: var(--modal-content-shadow); /* Sombra ligera para el modal */
+}
+/* Define estilos para el encabezado del modal. Se establece un color de fondo  */
+.modal-header {
+    background-color: var(--bg-modal-header)!important; /* Color de fondo del encabezado */
+    color: var(--text-color-modal-header); /* Color del texto del encabezado */
+    border-bottom: 1px solid #dee2e6; /* Borde inferior del encabezado */
+    border-top-left-radius: 10px; /* Borde redondeado superior izquierdo */
+    border-top-right-radius: 10px; /* Borde redondeado superior derecho */
+}
+.modal-header-delete {
+    background-color: var(--bg-modal-header-delete); /* Color de fondo del encabezado */
+}
+.modal-header-insert {
+    background-color: var(--bg-modal-header-insert); /* Color de fondo del encabezado */
+}
+.modal-header-update {
+    background-color: var(--bg-modal-header-update); /* Color de fondo del encabezado */
+}
+/* Define estilos para el cuerpo del modal */
+.modal-body {
+    padding: 20px; /* Relleno interno del cuerpo del modal */
+    overflow-y: auto; /* Hace que el contenido del modal sea scrollable verticalmente si es necesario */
+}
+/* Establece estilos para el footer del modal */
+.modal-footer {
+    background-color: var(--bg-modal-footer); /* Color de fondo del footer */
+    border-top: 1px solid #dee2e6; /* Borde superior del footer */
+    border-bottom-left-radius: 10px; /* Borde redondeado inferior izquierdo */
+    border-bottom-right-radius: 10px; /* Borde redondeado inferior derecho */
+}
+/* Define estilos para los botones primario y secundario del modal respectivamente */
+.btn-primary {
+    background-color: var(--btn-primary-bg); /* Color de fondo del botón primario */
+    border-color: var(--btn-primary-border); /* Color del borde del botón primario */
+}
+
+.btn-primary:hover {
+    background-color: var(--btn-primary-hover-bg); /* Color de fondo al pasar el ratón por encima del botón primario */
+    border-color: var(--btn-primary-hover-bg); /* Color del borde al pasar el ratón por encima del botón primario */
+}
+
+.btn-secondary {
+    background-color: var(--btn-secondary-bg); /* Color de fondo del botón secundario */
+    border-color: var(--btn-secondary-border); /* Color del borde del botón secundario */
+}
+
+.btn-secondary:hover {
+    background-color: var(--btn-secondary-hover-bg); /* Color de fondo al pasar el ratón por encima del botón secundario */
+    border-color: var(--btn-secondary-hover-bg); /* Color del borde al pasar el ratón por encima del botón secundario */
+}
+/* Define estilos para el botón de cerrar */
+.btn-close {
+    color: var(--text-color-light); /* Color del botón de cerrar */
+    opacity: 1; /* Opacidad completa del botón de cerrar */
+}
+
+.btn-close:hover {
+    color: var(--text-color-light); /* Color del botón de cerrar al pasar el ratón por encima */
+    opacity: 0.8; /* Opacidad reducida al pasar el ratón por encima del botón de cerrar */
+}
+/* colores de los botones */
+
+/* Opciones para dar estilo a los modales termina aqui ---------------------------------------------------------------------------- */
+
+/* Opciones para editar los avisos ----------------------------------------------------------------------------------------------- */
+/* Opciones para editar avisos de exito ---------- */
+.alert 
+{
+    margin-top: 20px; /* Margen superior para separar del contenido anterior */
+}
+
+/* Estilos para hacer la alerta responsiva */
+@media (max-width: 576px) 
+{
+    .alert 
+    {
+        padding: 1rem; /* Añade relleno interno en pantallas pequeñas */
+    }
+}
+
+/* Estilos para el botón */
+#showAlert {
+    margin-bottom: 20px; /* Margen inferior para separar del contenido siguiente */
+}
+
+/* Opciones para editar avisos de advertencia ------- */
+
+    
+/* Estilos para la tarjeta */
+/* General cuerpo */
+.card {
+    width: 20em; /* Ancho máximo */
+    margin: 1em 1em 1em 1em;
+    border: 1px solid #ccc; /* Borde de la tarjeta */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s ease-in-out; /* Transición suave al hacer hover */
+}
+
+/* Estilos para el contenido dentro de la tarjeta */
+.card-body {
+    padding: 1.25rem; /* Espaciado interno del cuerpo de la tarjeta */
+}
+
+.card-title {
+    text-align: center;
+    font-size: 1.25rem; /* Tamaño de la fuente del título */
+    margin-bottom: 0.75rem; /* Espacio inferior del título */
+}
+
+.card-subtitle {
+    font-size: 1rem; /* Tamaño de la fuente del subtítulo */
+    color: var(--color-secondary); /* Color del subtítulo */
+    margin-bottom: 0.5rem; /* Espacio inferior del subtítulo */
+}
+
+.card-text {
+    font-size: 0.875rem; /* Tamaño de la fuente del texto */
+    color: var(--text-color); /* Color del texto */
+}
+
+.card-link {
+    text-decoration: none; /* Sin subrayado para los enlaces */
+    color: var(--color-primary); /* Color del enlace */
+    margin-right: 10px; /* Espacio entre enlaces */
+}
+
+.card-link:hover {
+    text-decoration: underline; /* Subrayado al hacer hover sobre el enlace */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento al hacer hover */
+}
+
+/* Estilos responsivos */
+@media (max-width: 576px) {
+    .card {
+        width: 100%; /* Ancho máximo en pantallas pequeñas */
+    }
+}

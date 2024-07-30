@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links estilos propios -->
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/bt.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/tablas.css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu7vx16XwsUlcvF9ephK3J33c7hU6WzsTU5A&s">
+    <!-- Link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Agendar cita</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Sunniest</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./principal.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./agendar.html">Agendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./citas.html">Citas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ingreso.html">Ingreso</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Perfil</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./perfil.html">Ver Perfil</a></li>
+                            <li><a class="dropdown-item" href="#">Mi Historial</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./ingreso.html">Cerrar Sesión</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./profesionales.html">Profesionales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./ayuda.html">Ayuda</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2 form-search" type="search" placeholder="Buscar documentos"
+                        aria-label="Search">
+                    <button class="btn btn-search" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="box-form " id="formularios">
+        <div class="form-header">
+            <div>
+                <h1 id="Titulo">Agendar cita</h1>
+                <p id="Titulop"><b>Datos de consulta</b><br>Para agendar debes saber que profesional debes utilizar</p>
+            </div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2NuHxgh6D8L2pquajKdz2j4SYBG8ZTEM9aaU65TNscJa7KY9dwrWR096xi3c9Ug6X8uQ&usqp=CAU" alt></div>
+        </div>
+        <h2 id="insertError"></h2>
+        <div class="form-inputs" id="form-agendar-cita">
+            <!-- Formulario de usuarios -->
+            <form id="userForm" class="was-validated">
+                <!-- Sección de Datos Básicos -->
+                <div id="form-section-basics" class="form-section">
+                    <div class="form-section-datos">
+                        <div class="mb-2 input-group">
+                            <span class="input-group-text">Área Profesional</span>
+                            <select class="form-control" id="area_profesional" name="area_profesional" required>
+                                <!-- Opciones dinámicas de áreas -->
+                            </select>
+                        </div>
+                        <div class="mb-2 input-group">
+                            <span class="input-group-text">Subárea Profesional</span>
+                            <select class="form-control" id="subarea_profesional" name="subarea_profesional" required>
+                                <!-- Opciones dinámicas de subáreas -->
+                            </select>
+                        </div>
+                        <div class="mb-2 input-group">
+                            <span class="input-group-text">Especialidad Profesional</span>
+                            <select class="form-control" id="especialidad_profesional" name="especialidad_profesional" required>
+                                <!-- Opciones dinámicas de especialidades -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-section-btn">
+                    </div>
+                </div>
+                
+                    <div class="form-section-btn">
+                        <a href="./principal.html"><button class="btn-form btn-direction" type="button">Regresar</button></a>
+                        <button class="btn-form btn-crear" type="submit" onclick="mostrarformPerfil()">Agendar</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts propios -->
+    <script src="../js/formulario.js"></script>
+    <!-- Scripts boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

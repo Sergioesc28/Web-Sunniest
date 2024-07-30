@@ -1,0 +1,75 @@
+
+h1 {
+    text-align: center;
+    color: #390202;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+
+    margin-top: 0.5em;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+#searchTerm {
+    width: 30em;
+    padding: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.definicion
+{
+    width: 15em!important;
+    height: 15em;
+    margin: 1em 1em 1em 1em;
+    border: 2px solid #333;
+    background-color: #f4e9db;
+    padding: 0.5em;
+    border-radius: 4%;
+}
+
+.result-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+}
+.result-container div {
+    border-bottom: 1px solid #ddd;
+    padding: 0.5em;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.result-container h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    color: #9f3737;
+}
+.result-container p {
+    margin: 1em;
+    font-size: 0.8em;
+    color: #555;
+}
+.result-container a {
+    text-decoration: none;
+    color: #6e5146;
+    font-size: 0.8em;
+    text-align: end!important;
+    transition: color 0.3s;
+}
+.result-container a:hover {
+    color: #ff7300;
+}

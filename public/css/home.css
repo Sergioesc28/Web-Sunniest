@@ -1,0 +1,293 @@
+
+@import url(./raiz.css);
+body
+{
+    background-color: --bg-header-t;
+}
+
+footer
+{
+    padding: 4%;
+    background-color: var(--txt-header-sub-t);
+    color: var(--txt-header-t);
+    h1
+    {
+        text-align: center;
+        font-family: cursive;
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    h2
+    {
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 0.8em;
+    }
+    li
+    {
+        font-size: 1em;
+        list-style: none;
+        align-content: last baseline;
+        margin-left: 8em;
+    }
+}
+
+
+.Home-Header
+{
+    align-content: center;
+    background-image: url('https://img.freepik.com/foto-gratis/cerebro-papel-bombilla_23-2148519452.jpg');
+    height: 500px;
+    width: 100%;
+
+}
+.Home-Header h1 {
+    text-align: center;
+    font-size: 3em;
+    color: brown;
+    margin-bottom: 0.5em;
+}
+.Home-Header p {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: brown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 1em;
+}
+.Sub-Header
+{
+    max-width: 70%;
+}
+.Sub-Header h1 {
+    text-align: center;
+    color: var(--txt-header-sub-t);
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.Sub-Header p {
+    text-align: center;
+    text-decoration: dashed;
+    color: var(--txt-header-sub-p);
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.cartero
+{
+    padding: 15px;
+    }
+    .cartero .card {
+        align-items: center;
+        align-content: center;
+        margin: 1em;
+        text-align: center;
+        width: 20em;
+        height: 9.5em;
+        max-width: 20em;
+        flex-direction: row;
+        background-color: var(--bg-header-t);
+        border: 1px solid;
+    }
+
+    .cartero .card img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10%;
+        margin-right: 1em;
+    }
+    .card
+    {
+    transition: transform 0.3s ease-in-out; /* Transición suave para el efecto */
+            overflow: hidden; /* Asegurar que no haya desbordamiento */
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Aumentar el tamaño al 105% del tamaño original */
+        margin: 1em 1em 1em 1em;
+        background-color: var(--card-opciones-btn);
+        color: var(--card-opciones-btn);
+    }
+
+    .cartero .card .titulo {
+        margin: 0 auto;
+        color: var(--card-opciones-btn-p);
+        text-align: center;
+        font-weight: bold;
+        margin-top: 1em;
+        margin-left: 1em;
+    }
+
+    .cartero .card .texto {
+        color: var(--txt-header-sub-p);
+        font-style: italic;
+        margin-top: 0.5em;
+        margin-left: 0.2em;
+    }
+
+.tercer-header
+{
+    align-items: center;
+    align-content: center;
+    padding: 15px;
+    max-width: 80%;
+        .card {
+            height: 20em;
+            margin: 5px;
+            background-color: var(--bg-header-t);
+            border: 1px solid var(--card-opciones-btn); /* Corregido 'soli' a 'solid' */
+            width: 16em;
+            align-items: center;
+            align-content: center;
+            display: flex;
+            align-self: center;
+            transition: transform 0.3s ease-in-out; /* Transición suave para el efecto */
+            overflow: hidden; /* Asegurar que no haya desbordamiento */
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Aumentar el tamaño al 105% del tamaño original */
+            margin: 1em 1em 1em 1em;
+        }
+
+        .card .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card h1 {
+            color: var(--txt-header-sub-t);
+            font-size: 2em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .card p {
+            color: var(--txt-header-sub-t);
+            font-size: 0.9em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .card img {
+            margin-top: 10px;
+            max-height: 45%;
+            width: 80%;
+            transition: transform 0.3s ease-in-out; /* Añadir transición para la imagen */
+        }
+        img
+        {
+            max-width: 100%;
+            max-height: 100%;
+            overflow: hidden;
+            /*Asegurarquenohayadesbordamiento*//*Transiciónsuaveparaelefecto*/
+            transition: transform 0.8s ease-in-out;
+            -webkit-transition: transform 0.8s ease-in-out;
+            -moz-transition: transform 0.8s ease-in-out;
+            -ms-transition: transform 0.8s ease-in-out;
+            -o-transition: transform 0.8s ease-in-out;
+}
+        img:hover
+        {
+            transform: scale(1.1);
+            /*Aumentareltamañoal105%deltamañooriginal*/
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+        }
+}
+    .tercer-header .opciones
+    {
+        align-items: center;
+        align-content: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .tercer-header .central
+    {
+        background-color: var(--bg-header-t);
+        padding: 4% ;
+    }
+    .tercer-header h1 
+    {
+        color: var(--txt-header-sub-t);
+        font-size: 3em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .tercer-header p
+    {
+        color: var(--txt-header-sub-t);
+        font-size: 1.2em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .tercer-header .prent-img
+    {
+        align-items: end;
+        align-self: flex-end;
+        align-content: end;
+    }
+        .tercer-header a
+        {
+            align-items: center;
+            align-content: center;
+            display: flex;
+            text-align: center;
+            align-self: center;
+            background-color: var(--card-opciones-btn);
+            color: var(--card-opciones-btn-p);
+            p
+            {
+                color: var(--txt-header-sub-t);
+                font-size: 0.8em;
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        }
+.Equipo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    img
+    {
+            height: 100%;
+            width: 100%;
+            border-radius: 5%;
+            overflow: hidden;
+            /*Asegurarquenohayadesbordamiento*//*Transiciónsuaveparaelefecto*/
+            transition: transform 0.5s ease-in-out;
+}
+        img:hover
+        {
+            transform: scale(1.1);
+            /*Aumentareltamañoal105%deltamañooriginal*/
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+        }
+    h1, p
+    {
+        text-align: center;
+        color: var(--txt-header-sub-t);
+    }
+    h1
+    {
+        font-weight: bold;
+        font-size: 2em;
+    }
+    p
+    {
+        font-size: 1.2em;
+        color: var(--txt-header-sub-p);
+    }
+}
+

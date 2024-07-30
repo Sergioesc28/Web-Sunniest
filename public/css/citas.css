@@ -1,0 +1,135 @@
+/* Estilos para el contenedor de calendarios */
+.calendarios {
+    width: 80%;
+    padding: 4%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.hide
+{
+    display: none;
+}
+
+.cal-t {
+    background-color: var(--bg-cal);
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cal-semana {
+    border: 2px solid var(--cal-semana);
+    text-align: center;
+    color: #582e0c;
+    background-color: var(--bg-cal-semana);
+    padding: 10px;
+    font-size: 1em;
+}
+
+.cal-dia {
+    text-align: center;
+    background-color: #eee8d7;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.activo {
+    color: var(--cal-dia-activo);
+    background-color: var(--bg-cal-dia-activo);
+}
+
+.pasado {
+    color: var(--cal-dia-pasado);
+    background-color: var(--bg-cal-dia-pasado);
+}
+
+.ocupado {
+    color: var(--cal-dia-ocupado);
+    background-color: #d6d4cc;
+}
+
+.cal-dia ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cal-dia li {
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    background-color: #62366d;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 0.8em;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .calendarios {
+        width: 95%;
+        padding: 2%;
+    }
+    .cal-t {
+        font-size: 0.9em;
+    }
+    .cal-semana {
+        font-size: 0.9em;
+    }
+    .cal-dia {
+        font-size: 1em;
+    }
+}
+.filtros-citas
+{
+    button {
+        margin: 5px; /* Espaciado entre botones */
+        padding: 10px 20px; /* Espaciado interno del botón */
+        background-color: #e4bda3; /* Color de fondo del botón */
+        color: #582e0c; /* Color del texto del botón */
+        font-weight: bold;
+        border: 0.2em solid #582e0c; /* Borde del botón */
+        border-radius: 5px; /* Borde redondeado del botón */
+        cursor: pointer; /* Cambiar cursor al pasar por encima */
+        transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    }
+}
+
+.seccion-cita-pendientes, .seccion-cita-cancelado, .seccion-cita-completadas
+{
+    width: 60%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    ul {
+        list-style: none;
+        padding: 0;
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    li {
+        width: auto;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+}
+.seccion-cita-pendientes li
+{
+    background-color: #f0d99a;
+    color: brown;
+}
+.seccion-cita-cancelado li
+{
+    background-color: #ea0000;
+}
+.seccion-cita-completadas li
+{
+    background-color: #7ed273;
+}

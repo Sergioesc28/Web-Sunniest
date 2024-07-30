@@ -1,0 +1,73 @@
+/* Tema de colores inicia aquí */
+:root {
+    /* Colores generales */
+    --color-primary: #007bff; /* Color primario */
+    --color-secondary: #6c757d; /* Color secundario */
+    --color-success: #28a745; /* Color de éxito */
+    --color-danger: #dc3545; /* Color de peligro */
+    --color-warning: #ffc107; /* Color de advertencia */
+    --color-info: #17a2b8; /* Color de información */
+    --color-light: #f8f9fa; /* Color claro */
+    --color-dark: #343a40; /* Color oscuro */
+    
+    /* Colores de fondo */
+    --bg-body: #ffffff; /* Fondo del cuerpo */
+    --bg-navbar: #ad8f8f; /* Fondo del navbar */
+    --bg-dropdown: #f8f9fa; /* Fondo del menú desplegable */
+    --bg-modal: #ffffff; /* Fondo del modal */
+    --bg-modal-header: #007bff; /* Fondo del encabezado del modal */
+    --bg-modal-header-delete: #ff0000; /* Fondo del encabezado del modal de eliminación */
+    --bg-modal-header-insert: #007bff; /* Fondo del encabezado del modal de inserción */
+    --bg-modal-header-update: #00ff5e; /* Fondo del encabezado del modal de actualización */
+    --bg-modal-footer: #f8f9fa; /* Fondo del footer del modal */
+    
+    /* Colores de texto */
+    --text-color: #333333; /* Color de texto general */
+    --text-color-light: #ffffff; /* Color de texto claro */
+    --text-color-navbar: #333333; /* Color de texto del navbar */
+    --text-color-dropdown: #333333; /* Color de texto del menú desplegable */
+    --text-color-modal-header: #ffffff; /* Color de texto del encabezado del modal */
+    --text-color-modal-body: #333333; /* Color de texto del cuerpo del modal */
+    --text-color-modal-footer: #333333; /* Color de texto del footer del modal */
+    
+    /* Colores de borde */
+    --border-color: #ced4da; /* Color de borde general */
+    --border-color-primary: #007bff; /* Color de borde primario */
+    --border-color-secondary: #6c757d; /* Color de borde secundario */
+    
+    /* Colores de botón */
+    --btn-primary-bg: #007bff; /* Fondo del botón primario */
+    --btn-primary-text: #ffffff; /* Color de texto del botón primario */
+    --btn-primary-border: #007bff; /* Borde del botón primario */
+    --btn-primary-hover-bg: #0056b3; /* Fondo del botón primario al pasar el ratón */
+    --btn-secondary-bg: #6c757d; /* Fondo del botón secundario */
+    --btn-secondary-text: #ffffff; /* Color de texto del botón secundario */
+    --btn-secondary-border: #6c757d; /* Borde del botón secundario */
+    --btn-secondary-hover-bg: #5a6268; /* Fondo del botón secundario al pasar el ratón */
+    
+    /* Otros */
+    --modal-content-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra para el contenido del modal */
+
+    /* Colores personalizados adicionales */
+    --txt-header-t: white;
+    --bg-header-t: #f2eae4;
+    --txt-header-p: white;
+    --txt-header-sub-t: #400101;
+    --txt-header-sub-p: #a62626;
+    --card-opciones-btn: #d9a796;
+    --card-opciones-btn-p: #400101;
+    --bg-nav: #e4b889;
+    --btn-hover: #db7342;
+
+    /* Colores para el calendario */
+    --cal-semana: #69b7f2;
+    --bg-cal-semana: #94a7b6;
+    --bg-cal: #f8ebc2;
+    --bg-cal-dia-activo: #ddf5db;
+    --bg-cal-dia-ocupado: #e3cbec;
+    --bg-cal-dia-pasado: #cadeec;
+    --cal-dia-activo: #13750b;
+    --cal-dia-ocupado: #330799;
+    --cal-dia-pasado: #0165ad;
+}
+/* Tema de colores termina aquí */

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div id="formulario" class="form-p container container-fluid">
+        <div class="form-header container container-fluid">
+            <!-- Titulo de form -->
+            <div>
+                <h1 id="Titulo">Registra tu cuenta</h1>
+                <p id="Form-instruccion">Datos básicos <br>Dado que esta es tu primera vez, debes rellenar todos los
+                    datos
+                    correspodientes</p>
+            </div>
+            <!-- Logotipo de la empresa -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2NuHxgh6D8L2pquajKdz2j4SYBG8ZTEM9aaU65TNscJa7KY9dwrWR096xi3c9Ug6X8uQ&usqp=CAU"
+                alt>
+        </div>
+        <div class="form-in container container-fluid">
+
+<form action="/usuario" method="POST" enctype="multipart/form-data">
+    <!-- Datos básicos -->
+    <div id="input-basics" class="form-section">
+        <div class="mb-2 input-group">
+            <span class="input-group-text">Nombre</span>
+            <input type="text" aria-label="Nombre" class="form-control" placeholder="Nombre" id="nombre_user" name="nombre_user" required>
+            <input type="text" aria-label="Apellido" class="form-control" placeholder="Apellido" id="apellido_user" name="apellido_user" required>
+        </div>
+        <div class="mb-2 input-group">
+            <span class="input-group-text">Fecha de nacimiento</span>
+            <input type="date" class="form-control" id="fecha_user" name="fecha_user" required>
+        </div>
+        <div class="mb-2 input-group">
+            <span class="input-group-text"># Móvil</span>
+            <select class="input-group-text btn-number" id="sufijo_numero_user" name="sufijo_numero_user" required>
+                <option selected disabled>Selecciona un país</option>
+                <option value="+52">+52</option>
+                <option value="+54">+54</option>
+                <option value="+51">+51</option>
+            </select>
+            <input type="number" class="form-control" id="numero_user" name="numero_user"
+                placeholder="Número Telefónico" required>
+        </div>
+        <div class="mb-2 input-group">
+            <span class="input-group-text">Correo</span>
+            <input type="email" class="form-control" id="correo_user" name="correo_user" placeholder="usuario@gmail.com"
+                required>
+        </div>
+        <div class="mb-2 input-group">
+            <span class="input-group-text">Contraseña</span>
+            <input type="password" class="form-control" id="contrasena_user" name="contrasena_user"
+                placeholder="Mínimo 8 caracteres" required>
+        </div>
+    </div>
+
+    <!-- Direcciones -->
+    <div id="input-direcciones" class="form-section hide">
+        <div class="mb-2 input-group">
+            <span class="input-group-text">Estado</span>
+            <input type="text" class="form-control" id="estado_user" name="estado_user" placeholder="Estado" required>
+            <span class="input-group-text">Ciudad</span>
+            <input type="text" class="form-control" id="ciudad_user" name="ciudad_user" placeholder="Ciudad" required>
+        </div>
+        <div class="mb-2 input-group">
+            <span class="input-group-text">Colonia</span>
+            <input type="text" class="form-control" id="colonia_user" name="colonia_user" placeholder="Colonia"
+                required>
+        </div>
+        <div class="mb-2 input-group">
+            <span class="input-group-text">Dirección</span>
+            <input type="text" class="form-control" id="direccion_user" name="direccion_user" placeholder="Dirección"
+                required>
+        </div>
+    </div>
+
+    <!-- Documentos -->
+    <div id="input-documentos" class="form-section hide">
+        <div class="mb-2 input-group">
+            <span class="input-group-text">CURP</span>
+            <input type="text" class="form-control" placeholder="CURP" id="curp_user" name="curp_user" required>
+        </div>
+        <div class="mb-2 input-group">
+            <span class="input-group-text">INE</span>
+            <input type="file" class="form-control" id="ine_user" name="ine_user" required>
+        </div>
+        <div class="mb-2 input-group">
+            <span class="input-group-text">Foto</span>
+            <input type="file" class="form-control" id="foto_user" name="foto_user" required>
+        </div>
+    </div>
+
+    <!-- Botones de navegación -->
+    <div id="opcion-documents" class="opcion-section hide">
+        <div class="row">
+            <div class="col-md-6"><button class="btn-previus-direction">Atrás</button></div>
+            <div class="col-md-6"><button class="btn-next-exito" type="submit" id="EnviarDatosUser">Finalizar</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

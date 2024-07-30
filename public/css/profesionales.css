@@ -1,0 +1,87 @@
+.header-profesional {
+    background-image: url('https://i.pinimg.com/564x/6a/37/f5/6a37f586da1d4d42b10b0be030e0beb1.jpg');
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100%;
+    height: 400px; /* Ajusta la altura del header según tus necesidades */
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.header-profesional-info
+{
+        align-self: center;
+    align-content: center;
+    padding: 2em;
+    max-width: 80%;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+/* styles.css */
+
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    color: #580404!important;
+    font-family: monospace!important;
+}
+
+.container {
+    width: 70%!important;
+    background-color: #ffffff;
+    margin: 20px;
+}
+
+
+.profile-picture img {
+    width: 10em;
+    height: 10em!important;
+    background-color: #cccccc;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 4px solid white;
+}
+
+
+#btn-datos-personales {
+    padding: 10px 15px;
+    background-color: #e2b884;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.personal-info h2, .citas h2, .puntuaciones h2, .tutor h2, .profesionales h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+
+.tutor img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.modal-header-ModalGeneral {
+    background-color: #4CAF50;
+    color: white;
+}
